@@ -10,6 +10,8 @@ jobs:
     runs-on: scaleleap
     container:
       image: docker:latest
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
 
     steps:
     - uses: actions/checkout@v3
