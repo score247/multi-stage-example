@@ -7,11 +7,9 @@ jobs:
 
   build:
 
-    runs-on: scaleleap
+    runs-on: scaleleap-dev
     container:
-      image: docker:latest
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+      image: docker:dind
 
     steps:
     - uses: actions/checkout@v3
