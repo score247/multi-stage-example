@@ -8,6 +8,8 @@ jobs:
   build:
 
     runs-on: scaleleap
+    container:
+      image: docker:latest
 
     steps:
     - uses: actions/checkout@v3
