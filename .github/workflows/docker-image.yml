@@ -10,7 +10,7 @@ jobs:
     runs-on: scaleleap-dev
     container:
       image: docker:latest
-    volumes:
+      volumes:
         - /var/run/docker.sock:/var/run/docker.sock
 
     steps:
