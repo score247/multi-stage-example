@@ -9,7 +9,7 @@ jobs:
 
     runs-on: scaleleap-dev
     container:
-      image: ghcr.io/actions/actions-runner:latest
+      image:  docker:latest
       
 
     steps:
