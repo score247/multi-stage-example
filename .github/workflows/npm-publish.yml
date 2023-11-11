@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: pwd
-      - run: ls -la
-      - run: mkdir test
-      - run: ls -la
+      - run: ls -la /home/runner/_work
+      - run: mkdir /home/runner/_work/test
+      - run: ls -la /home/runner/_work
