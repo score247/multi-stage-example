@@ -9,8 +9,8 @@ on:
 jobs:
   build:
     runs-on: scaleleap-dev
-    container:
-      image: node:18
     steps:
       - uses: actions/checkout@v3
-      - run: pnpm install
+      - run: ls -la
+      - run: mkdir test
+      - run: ls -la
