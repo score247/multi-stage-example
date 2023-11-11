@@ -17,3 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag test:$(date +%s)
     - run: docker image ls -a
+    - run: ls -la /var/lib/docker
