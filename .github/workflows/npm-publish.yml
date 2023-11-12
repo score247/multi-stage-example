@@ -25,6 +25,5 @@ jobs:
       - run: pwd
       - run: ls -la /home/runner/_work
       - run: ls -la ~/
-      - run: npm install -g pnpm
       - run: pnpm install
       - run: ls -la ~/.local/share/pnpm/store
