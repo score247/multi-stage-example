@@ -16,3 +16,20 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag test:$(date +%s)
     - run: docker image ls -a
+    - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      with:
+        version: 8
+        run_install: false
+    
+    - run: pwd
+    - run: ls -la /home/runner/_work
+    - run: ls -la ~/
+    - run: pnpm install
+    - run: pnpm store path
