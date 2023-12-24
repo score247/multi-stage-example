@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: scaleleap-dev
+    runs-on: scaleleap-dev-docker
     steps:
       - run: docker ps -a
       - uses: actions/checkout@v3
